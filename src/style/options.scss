@@ -1,0 +1,127 @@
+$bodyColor:#EBEBEB;
+$secondaryColor : #9013FE;
+$tertiaryColor:#000000;
+$tertiaryFamily :Roboto-Bold;
+$underLine:#D7D7D7;
+
+.options{
+    background-color: $bodyColor;
+    width: 300px;
+    margin: 0 3%;
+    &__select{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px $underLine ;
+        padding-left: 40px;
+        p{
+            font-size: 20px;
+            font-family: $tertiaryFamily;
+          
+        }
+        &--change{
+            width: 90%;
+            border-radius: 5px;   
+            @media (max-width:576px) {
+                width: 90% !important;
+                display: none;
+            }
+        }
+        &--cursor{       
+            @media (max-width:576px) {
+               cursor: pointer;
+            }
+        }
+        @media (max-width:576px) {
+            padding-top: 10px;
+            padding-bottom: 0px;
+            background-color: $underLine
+          }
+    
+    }
+    &__date{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px D7D7D7;
+        padding-left: 40px;
+        p{
+            font-size: 20px;
+            font-family: $tertiaryFamily;
+        }
+        label,input{
+            margin-bottom: 10px;
+        }
+        &--change{
+            display: flex;
+            @media (max-width:576px) {
+                display: none;
+            }
+        }
+        &--cursor{       
+            @media (max-width:576px) {
+               cursor: pointer;
+            }
+        }
+        @media (max-width:576px) {
+            padding-bottom: 0px;
+            background-color: $underLine
+          }
+    }
+    &__categories{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px D7D7D7;
+        padding-left: 40px;
+        p{
+            font-size: 20px;
+            font-family: $tertiaryFamily;
+        }
+        input{
+            visibility: hidden;
+        }
+        &--radio{
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+    
+        }
+        &--radioClicked{
+            color: $secondaryColor;
+            background-color: #FFFFFF;
+        }
+        &--cursor{       
+            @media (max-width:576px) {
+               cursor: pointer;
+            }
+        }
+        &--change{
+            @media (max-width:576px) {
+                display: none;
+             }
+        }
+        @media (max-width:576px) {
+            padding-bottom: 0px;
+            background-color: $underLine
+         }
+    }
+    &__icon{
+        margin-right: 40px;
+        margin-top: 5px;
+        font-size: 20px;
+        display: none;
+        @media (max-width:576px) {
+           display: block;
+           }
+    }
+    @media (max-width:768px) {
+        margin: 0;
+        margin-right: 5%;
+        padding-bottom: 0px;
+    }
+    @media (max-width:576px) {
+        margin: 0;
+        width: 100%;
+       }
+}

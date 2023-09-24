@@ -1,0 +1,55 @@
+$bodyColor: #F2F2F2;
+$secondaryColor : #9013FE;
+$secondaryFontSmSize:24px;
+
+.content{
+    &__search{
+        h2{
+            padding-top: 20px;
+            font-size: $secondaryFontSmSize
+        }
+        span{
+            color: $secondaryColor;
+        }
+        &--title{
+            p{
+                color: $secondaryColor;
+                margin-right: 10px;
+                padding:5px;
+                border: solid 1px $secondaryColor;
+                border-radius: 100px;
+                font-style: italic;
+                cursor: pointer;
+            }
+        }
+        @media (max-width:576px) {
+            display: none;
+           }
+    }
+    &__card{
+        &--img{
+            margin-right: 3%;
+            img{
+                width: 220px;
+                height: 100%;
+                object-fit: cover;  
+                object-position: center;
+                @media (max-width:992px) {
+                    width: 100%;
+                    height: 196px;
+                   }
+                
+            }
+            @media (max-width:576px) {
+                margin-right: 0px 
+               }
+        }
+        &--article{
+            margin-right: 3%;
+        }
+    }
+    @media (max-width:576px) {
+        margin: 0 auto;
+        width: 90%;
+    }
+}

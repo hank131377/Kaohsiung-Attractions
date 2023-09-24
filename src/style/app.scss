@@ -1,0 +1,22 @@
+$background: #F2F2F2;
+$fontColor:#000000;
+$blankColor:#FFFFFF;
+
+$bannerColor : #7828B4;
+$bannerFontSize:36px;
+$titleColor :#9013FE;
+$messageColor:#9B9B9B;
+
+// rwd
+// 768px
+// 414px
+
+body{
+    background-color: $background;
+}
+
+
+@import './banner.scss';
+@import './options.scss';
+@import './content.scss';
+@import './single.scss';

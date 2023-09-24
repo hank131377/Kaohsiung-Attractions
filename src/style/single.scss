@@ -1,0 +1,51 @@
+$bodyColor:#FFFFFF;
+$secondaryColor : #9013FE;
+$secondaryFamily : Roboto-Bold;
+$secondaryFontSize:36px;
+$tertiaryColor: #EBEBEB;
+$tertiaryFamily:Roboto-Regular;
+
+.single{
+    width: 70%;
+    ol{
+        background-color: $tertiaryColor;
+        color: $secondaryColor;
+        font-size: 16px;
+        list-style: none;
+        li{
+            cursor: pointer;
+        }
+    }
+    span{
+        font-family: $tertiaryFamily;
+    }
+    &__breadcrumb{
+    }
+    &__card{
+        width: 100%;
+        height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            object-position: center;
+        }
+        h3{
+            font-size: $secondaryFontSize;
+            color: $secondaryColor;
+            font-family: $secondaryFamily;
+        }
+    }
+    @media (max-width:1400px) {
+        width: 65%;
+       }
+    @media (max-width:992px) {
+        width: 60%;
+       }
+    @media (max-width:768px) {
+        width: 50%;
+       }
+    @media (max-width:576px) {
+        width: 100%;
+       }
+}
